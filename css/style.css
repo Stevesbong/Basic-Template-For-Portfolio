@@ -1,0 +1,297 @@
+/* ================================= 
+  Web Fonts
+==================================== */
+
+body {
+    font-family: 'Simonetta', Arial, sans-serif;
+    font-size: 1.4em;
+    background-color: rgb(247, 247, 247);
+}
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+h1,
+.about,
+ul li,
+.container,
+#skills,
+div#contact {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+p {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: burlywood;
+}
+
+img {
+    width: 100%;
+    padding: 15px;
+}
+
+.main-nav ul {
+    margin-bottom: 60px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+main {
+    background-color: rgb(238, 234, 228);
+}
+
+.main-nav a,
+.main-nav li {
+    display: block;
+}
+
+.main-nav a {
+    padding: 15px;
+}
+
+/* ---- About ---- */
+
+.about {
+    color: grey;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    line-height: 1.5;
+}
+
+.about span {
+    color: #3495A0;
+}
+
+/* ---- Layout Conotainers, Skills ---- */
+
+main,
+.skills {
+    margin-bottom: 150px;
+}
+
+.skills img {
+    width: 70%;
+}
+
+/* ---- Layout Contact, Footer ---- */
+
+.contact-info li {
+    padding: 15px 0;
+}
+
+.contact-info a {
+    padding-left: 10px;
+}
+
+.main-footer {
+    margin-top: 80px;
+    border-top: 1px solid rgb(197, 196, 196);
+    margin: 80px 5% 0;
+}
+
+.mobile h2 {
+    float: left;
+    margin-top: 0;
+    padding: 20px;
+    font-size: 1em;
+}
+
+.mobile ul li {
+    float: right;
+    margin: auto 0;
+    padding: 20px;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    
+    body {
+        font-size: 1.25em;
+        margin: 0 auto;
+    }
+
+    p {
+        padding: 10px 15px;
+    }
+
+    /* ---- Navigation ---- */
+
+    .main-nav {
+        text-align: center;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    /* ---- About ---- */
+
+    .about img {
+        float: right;
+        width: 40%;
+    }
+    
+    .about p {
+        text-align: left;
+    }
+
+    /* ---- Portfolio Container ---- */
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .col {
+        float: left;
+    }
+
+    .project {
+        width: 50%;
+        min-height: 500px;
+    }
+    .project img {
+        padding: 10px;
+    }
+
+    /* ---- Skills ---- */
+
+    .skills img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* ---- Contact ---- */
+
+    #contact {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* ---- Footer ---- */
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    .tablet-desktop h2 {
+        float: left;
+        font-size: 1em;
+        margin: 0;
+    }
+    
+    .tablet-desktop h2,
+    .footer-nav li {
+        padding: 25px 0;
+    }
+
+    .footer-nav {
+        float: right;
+    }
+
+    .footer-nav li {
+        display: inline-block;
+        margin-left: 15px;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        max-width: 1150px;
+    }
+
+        /* ---- Header ---- */
+
+    header {
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    #top h1 {
+        float: left;
+        margin-left: 20px;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+        /* ---- About ---- */
+
+    .about {
+        width: 100%;
+        padding: 0 40px;
+        margin-bottom: 100px;
+    }
+
+        /* ---- Main ---- */
+
+    .project {
+        width: 33%;
+    }
+
+        /* ---- Skills ---- */
+
+    .skills img {
+        width: 150px;
+        height: 150px;
+    }
+
+}
