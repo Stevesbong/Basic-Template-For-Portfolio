@@ -43,6 +43,11 @@ p {
     padding: 10px;
 }
 
+.about p,
+#contact p {
+    color: grey;
+}
+
 a {
     text-decoration: none;
     text-transform: uppercase;
@@ -88,10 +93,7 @@ main {
 /* ---- About ---- */
 
 .about {
-    color: grey;
-    width: 85%;
-    margin: 0 auto;
-    padding-bottom: 40px;
+    padding: 0 20px 40px 20px;;
     line-height: 1.5;
 }
 
@@ -179,11 +181,13 @@ main,
 
     .about img {
         float: right;
-        width: 40%;
+        width: 50%;
     }
     
     .about p {
         text-align: left;
+        float: left;
+        width: 50%;
     }
 
     /* ---- Portfolio Container ---- */
