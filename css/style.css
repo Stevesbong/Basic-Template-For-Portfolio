@@ -4,7 +4,6 @@
 
 body {
     font-family: 'Simonetta', Arial, sans-serif;
-    font-size: 1.4em;
     background-color: rgb(247, 247, 247);
 }
 
@@ -63,7 +62,7 @@ a:hover {
 }
 
 img {
-    width: 100%;
+    width: 70%;
     padding: 15px;
 }
 
@@ -119,6 +118,7 @@ main,
 }
 
 .contact-info a {
+    text-transform: none;
     padding-left: 10px;
 }
 
@@ -131,14 +131,14 @@ main,
 .mobile h2 {
     float: left;
     margin-top: 0;
-    padding: 20px;
+    padding: 15px 2%;
     font-size: 1em;
 }
 
 .mobile ul li {
     float: right;
     margin: auto 0;
-    padding: 20px;
+    padding: 15px 2%;
 }
 
 .tablet-desktop {
