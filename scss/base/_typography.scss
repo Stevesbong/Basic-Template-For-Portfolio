@@ -1,0 +1,72 @@
+/* ================================= 
+  Web Fonts
+==================================== */
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: 'Simonetta', Arial, sans-serif;
+    background-color: $main-color;
+}
+
+h1,
+.about,
+ul li,
+.container,
+#skills,
+div#contact {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+p {
+    padding: 10px;
+}
+
+.about p,
+#contact p {
+    color: $text-lightest;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:visited {
+    color: $anchor-visited;
+}
+
+a:hover {
+    color: $anchor-hover;
+}
+
+img {
+    width: 70%;
+    padding: 15px;
+}
+
+main,
+.skills {
+    margin-bottom: 150px;
+}
+
+.skills img {
+    width: 70%;
+}
