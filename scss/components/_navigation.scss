@@ -1,8 +1,13 @@
 .main-nav ul {
     margin-bottom: 60px;
 
-    & li {
-        display: block;
-        padding: 15px;
-    }
+}
+.main-nav li {
+    display: block;
+    padding: 15px;
+}
+
+.main-nav a {
+    padding: 15px;
+    display: block;
 }

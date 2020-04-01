@@ -1,0 +1,160 @@
+
+body {
+    @include mq(med) {
+        font-size: 1.25em;
+        margin: 0 auto;
+    }
+
+    @include mq(lg) {
+        max-width: 1150px;
+    }
+}
+
+header {
+    @include mq(lg) {
+        margin-top: 30px;
+        padding: 15px;
+    }
+}
+
+#top h1 {
+    @include mq(lg) {
+        float: left;
+        margin-left: 20px;
+    }
+}
+
+p {
+    @include mq(med) {
+        padding: 10px 15px;
+    }
+}
+
+    /* ---- Navigation ---- */
+
+.main-nav {
+    @include mq(med) {
+        text-align: center;
+
+        & li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+    }
+
+    @include mq(lg) {
+        float: right;
+    }
+}
+
+    /* ---- About ---- */
+
+.about {
+    & img {
+        @include mq(med) {
+            float: right;
+            width: 50%;
+        }
+    }
+
+    & p {
+        @include mq(med) {
+            text-align: left;
+            float: left;
+            width: 50%;
+        }
+    }
+
+    @include mq(lg) {
+        width: 100%;
+        padding: 0 40px;
+        margin-bottom: 100px;
+    }
+}
+
+    /* ---- Portfolio Container ---- */
+
+.container {
+    @include mq(med) {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.col {
+    @include mq(med) {
+        float: left;
+    }
+}
+
+.project {
+    @include mq(med) {
+        width: 50%;
+        min-height: 500px;
+
+        & img {
+            padding: 10px;
+        }
+    }
+
+    @include mq(lg) {
+        width: 33%;
+    }
+}
+
+    /* ---- Skills ---- */
+
+.skills img {
+    @include mq(med) {
+        width: 250px;
+        height: 250px;
+    }
+
+    @include mq(lg) {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+    /* ---- Contact ---- */
+
+#contact {
+    @include mq(med) {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+    /* ---- Footer ---- */
+
+.mobile {
+    @include mq(med) {
+        display: none;
+    }
+}
+
+.tablet-desktop {
+    @include mq(med) {
+        display: block;
+
+        & h2 {
+            float: left;
+            font-size: 1em;
+            margin: 0;
+            padding: 25px 0;
+        }
+    }
+}
+
+.footer-nav {
+    @include mq(med) {
+        float: right;
+
+        & li {
+            display: inline-block;
+            margin-left: 15px;
+            text-transform: uppercase;
+            padding: 25px 0;
+        }
+    }
+}
